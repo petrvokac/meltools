@@ -6,7 +6,7 @@ proceses=$(ps -ax | awk '($5=="melcor2") {print $1}')
 n=$(echo $proceses | wc -w)
 if [ $n = 0 ]
 then
-   echo "no melcor2 process found"
+   echo "no melcor2 (2.2) process found"
 else   
    pwdx $proceses 
 fi    
